@@ -357,7 +357,7 @@ pSplitList(output_type *pAnchor)
 	if (pLeftOver->pNext != NULL) {
 		pLeftOver->pNext->pPrev = pLeftOver;
 	}
-	fail(!bCheckDoubleLinkedList(pLeftOver));
+	/* fail(!bCheckDoubleLinkedList(pLeftOver)); */
 
 	NO_DBG_MSG("pAnchor");
 	NO_DBG_HEX(pCurr->szStorage[iIndex]);
