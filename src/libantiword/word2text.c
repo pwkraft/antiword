@@ -491,7 +491,7 @@ pStartNewOutput(output_type *pAnchor, output_type *pLeftOver)
 		pLeftOver->pPrev = NULL;
 		pLeftOver->pNext = NULL;
 	}
-	fail(!bCheckDoubleLinkedList(pLeftOver));
+	/*fail(!bCheckDoubleLinkedList(pLeftOver));*/
 	return pLeftOver;
 } /* end of pStartNewOutput */
 

@@ -373,7 +373,7 @@ pSplitList(output_type *pAnchor)
 					pCurr->tFontRef,
 					pCurr->usFontSize);
 	pCurr->pNext = NULL;
-	fail(!bCheckDoubleLinkedList(pAnchor));
+	/* fail(!bCheckDoubleLinkedList(pAnchor)); */
 
 	return pLeftOver;
 } /* end of pSplitList */
