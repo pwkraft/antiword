@@ -925,7 +925,7 @@ bWordDecryptor(FILE *pFile, long lFilesize, diagram_type *pDiag)
 						pFontTmp->ucFontNumber,
 						pFontTmp->usFontStyle,
 						pFontTmp->usFontSize);
-				fail(!bCheckDoubleLinkedList(pAnchor));
+				/*fail(!bCheckDoubleLinkedList(pAnchor));*/
 			}
 			ucFontNumber = pFontTmp->ucFontNumber;
 			usFontSize = pFontTmp->usFontSize;
@@ -1333,7 +1333,7 @@ pHdrFtrDecryptor(FILE *pFile, ULONG ulCharPosStart, ULONG ulCharPosNext)
 				vCloseFont();
 				pOutput->tFontRef = tOpenFont(0,
 					FONT_REGULAR, DEFAULT_FONT_SIZE);
-				fail(!bCheckDoubleLinkedList(pAnchor));
+				/*fail(!bCheckDoubleLinkedList(pAnchor));*/
 				break;
 			case TABLE_SEPARATOR:
 				vStoreCharacter((ULONG)' ', pOutput);
@@ -1365,7 +1365,7 @@ pHdrFtrDecryptor(FILE *pFile, ULONG ulCharPosStart, ULONG ulCharPosNext)
 			if (pLeftOver != NULL) {
 				pLeftOver->pPrev = pOutput;
 			}
-			fail(!bCheckDoubleLinkedList(pAnchor));
+			/*fail(!bCheckDoubleLinkedList(pAnchor));*
 			for (pOutput = pAnchor;
 			     pOutput->pNext != NULL;
 			     pOutput = pOutput->pNext)
