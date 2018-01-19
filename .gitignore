@@ -11,3 +11,4 @@ src/*.def
 src/antiword.exe
 src/antiword
 inst
+*~
